@@ -92,6 +92,17 @@
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
   }
+
+  .trust-section {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .trust-section .partner-logo {
+    max-width: 200px; /* adjust as needed */
+    margin-top: 1rem;
+  }
+  
   
   /* CTA button style */
   .cta-btn {
