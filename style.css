@@ -54,7 +54,17 @@ html {
   
   .logo {
   /* Simple text logo */
-    font-size: 1.75rem;
+    /* font-size: 1.75rem; */
+        font-size: 6vw; /* Adjust the value as needed */
+    }
+    
+    @media (min-width: 1200px) {
+        .logo {
+            font-size: 72px; /* Set a maximum font size */
+        }
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-weight: bold;
     color: #333;
     text-decoration: none;
