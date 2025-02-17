@@ -3,11 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  html {
+}
+
+html {
     font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
+      scroll-behavior: smooth;
   }
   
   body {
@@ -30,14 +30,30 @@
     border-bottom: 1px solid #ddd;
     padding: 1rem 0;
   }
-  header .container {
+  .header-stack {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: center; /* or flex-start, if you want the nav aligned to the left */
   }
   
+  /* If you want the navigation horizontally aligned, keep this.  Otherwise, you can change it to vertical if you prefer a stacked menu, too. */
+  .header-stack nav ul {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem; /* small spacing between logo and nav */
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  /* Additional style tweaks if you want a left or center alignment: */
+  
+  /* For center-aligned text/logo/nav: */
+  header .header-stack {
+    align-items: center;
+  }
+  } 
+  
   /* Simple text logo */
-  .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
@@ -98,14 +114,11 @@
     margin: 2rem 0;
   }
   
-  .trust-section .partner-logo {
-    max-width: 400px; /* adjust as needed */
-    margin-top: 1rem;
-  }
-/* Ensure consistent margins for headings and paragraphs in the trust-section */
-.trust-section h2 {
-    margin-left: 0;
+.trust-section .partner-logo {
+  max-width: 400px; /* adjust as needed */
+  margin-top: 1rem;
 }
+/* Ensure consistent margins for headings and paragraphs in the trust-section */
 .trust-section p {
   margin-left: 0;
 }
