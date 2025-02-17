@@ -99,10 +99,15 @@
   }
   
   .trust-section .partner-logo {
-    max-width: 200px; /* adjust as needed */
+    max-width: 400px; /* adjust as needed */
     margin-top: 1rem;
   }
-  
+/* Ensure consistent margins for headings and paragraphs in the trust-section */
+.trust-section h2,
+.trust-section p {
+  margin-left: 0;
+  padding-left: 0;
+}
   
   /* CTA button style */
   .cta-btn {
