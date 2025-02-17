@@ -51,13 +51,15 @@ html {
   header .header-stack {
     align-items: center;
   }
-  } 
   
+  .logo {
   /* Simple text logo */
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #333;
     text-decoration: none;
+    margin: 0;         /* Remove default h1 margins if needed */
+    padding: 0;
   }
   
   /* Navigation Styles */
