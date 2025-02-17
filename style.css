@@ -103,10 +103,11 @@
     margin-top: 1rem;
   }
 /* Ensure consistent margins for headings and paragraphs in the trust-section */
-.trust-section h2,
+.trust-section h2 {
+    margin-left: 0;
+}
 .trust-section p {
   margin-left: 0;
-  padding-left: 0;
 }
   
   /* CTA button style */
