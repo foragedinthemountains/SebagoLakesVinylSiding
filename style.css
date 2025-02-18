@@ -47,7 +47,7 @@ html {
   
   /* If you want the navigation horizontally aligned, keep this.  Otherwise, you can change it to vertical if you prefer a stacked menu, too. */
   .header-stack nav ul {
-    display: flex;
+    display: center;
     gap: 1rem;
     margin-top: 0.5rem; /* small spacing between logo and nav */
     list-style-type: none;
