@@ -23,6 +23,13 @@ html {
     margin: 0 auto;
     padding: 1rem 0;
   }
+  /* Once the viewport is at least 992px wide (Bootstrap's typical 'lg' breakpoint) */
+@media (min-width: 992px) {
+  .container {
+    width: 90%;
+    max-width: 1200px;
+  }
+}
   
   /* Header Styles */
   header {
