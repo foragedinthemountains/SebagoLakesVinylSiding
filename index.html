@@ -64,11 +64,14 @@
 
     
   
-  <footer>
-    <p>Proudly serving the Sebago Lakes Region of Maine</p>
-    <p>&copy; <span id="year"></span> Sebago Lakes Vinyl Siding</p>
-  </footer>
+<footer>
+  <p>Proudly serving the Sebago Lakes Region of Maine</p>
+  <p>&copy; <span id="current-year"></span> Sebago Lakes Vinyl Siding</p>
+</footer>
 
-  <script src="scripts/main.js"></script>
+<script>
+  // Display current year in the footer
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
