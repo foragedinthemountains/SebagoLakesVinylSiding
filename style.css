@@ -194,9 +194,11 @@ section {
   gap: 1rem;
 }
 
+/* Force images to a 2:1 shape on desktop and mobile. */
 .gallery-grid img {
   width: 100%;
-  display: block;
+  aspect-ratio: 2 / 1;   /* Maintains 2:1 shape */
+  object-fit: cover;     /* Crops if the actual image ratio differs */
   border: 2px solid #eee;
   border-radius: 0.25rem;
 }
